@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-APTEM_TOKEN = os.getenv('CHANGE_ME')
-DATABASE_URL = os.getenv('CHANGE_ME')
+APTEM_TOKEN = os.getenv("aptem_X-API-Token")
+DATABASE_URL = os.getenv("database_string")
 
 # Learners are split across two tables by programme status: Active / OnBreak
 # go to Aptem_users, every other status goes to non_active_users.
